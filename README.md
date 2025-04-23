@@ -99,9 +99,9 @@ pandas==2.2.3
 joblib==1.4.2
 cachetools==5.5.0
 python-dotenv==1.0.1
-langchain==0.3.0
-langchain-community==0.3.0
-scikit-learn==1.5.2
+langchain==0.3.1
+langchain-community==0.3.1
+scikit-learn==1.6.1
 ```
 
 | Library              | Purpose                                                                 |
@@ -214,6 +214,10 @@ textColor = "#212529"
 
 [client]
 showDeployButton = false
+toolbarMode = "minimal"
+
+[ui]
+hideTopBar = true
 ```
 
 ### 3. Set Up Ollama

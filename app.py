@@ -54,9 +54,16 @@ st.title("Medical Summary Generator")
 
 st.markdown("""
     <style>
-    [data-testid="stDeployButton"] {
+        .reportview-container {
+            margin-top: -2em;
+        }
+        #MainMenu {visibility: hidden;}
+        .stDeployButton {display:none;}
+        footer {visibility: hidden;}
+        #stDecoration {display:none;}
+        [data-testid="stDeployButton"] {
         display: none !important;
-    }
+        }
     </style>
 """, unsafe_allow_html=True)
 
@@ -102,7 +109,7 @@ cache = TTLCache(maxsize=100, ttl=3600)
 @cached(cache)
 def generate_summary(patient_data_str):
     try:
-        response = llm(prompt.format(patient_data=patient_data_str))
+        response = llm.invoke(prompt.format(patient_data=patient_data_str))
         return response
     except Exception as e:
         logging.error(f"Error generating summary: {e}")

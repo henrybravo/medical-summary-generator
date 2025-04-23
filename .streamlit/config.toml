@@ -13,3 +13,7 @@ textColor = "#212529"
 
 [client]
 showDeployButton = false
+toolbarMode = "minimal"
+
+[ui]
+hideTopBar = true
