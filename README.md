@@ -309,7 +309,7 @@ Open [http://localhost:8501](http://localhost:8501)
 ![msg-llama32.png](./images/msg-llama32.png "msg-llama32.png")
 
 ## Application details
-s
+
 ```python
 import streamlit as st
 ```
@@ -359,8 +359,8 @@ numerical_ranges = {c["name"]: (c["min"], c["max"]) for c in config["numerical"]
 categorical_options = {c["name"]: c["options"] for c in config["categorical"]}
 ```
 
-- Purpose: Extracts input field metadata from config.json.
-- Why: Dynamically configures input fields, enabling adaptation to different datasets.
+- Extracts input field metadata from `config.json`.
+- Dynamically configures input fields, enabling adaptation to different datasets.
 
 ```python
 try:
