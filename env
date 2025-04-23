@@ -1,0 +1,2 @@
+OLLAMA_BASE_URL=http://host.docker.internal:11434
+OLLAMA_AVAILABLE_MODELS=phi3,deepseek-r1:latest,llama3.2:latest,llama3.1:8b
